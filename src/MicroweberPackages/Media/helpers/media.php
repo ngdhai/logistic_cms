@@ -67,7 +67,7 @@ function reorder_media($data)
     return app()->media_manager->reorder($data);
 }
 
-
+api_expose_admin('delete_media');
 function delete_media($data)
 {
     return app()->media_manager->delete($data);
