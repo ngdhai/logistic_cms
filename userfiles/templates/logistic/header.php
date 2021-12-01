@@ -164,13 +164,21 @@
     <div class="support-nav-area">
         <div class="container">
             <div class="row">
-                <div class="col-12 position-static">
+                <div class="col-lg-3 col-6">
+                    <div class="logo-wrapper">
+                        <div class="logo-wrapper-inner">
+                            <module type="logo" template="default" />
+                            <!-- <a href="index.html"><img src="<?php print template_url(); ?>assets/img/logo-3.png" alt=""></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-6 position-static">
                     <div class="navbar-area">
                         <div class="row">
                             <div class="col-12 position-static">
-                                <module type="menu" template="header"/>
+                                <module type="menu" template="header" />
                                 <div id="mobileMenuHome3">
-                                    
+
                                 </div>
                                 <!-- <ul class="search-area">
                                     <li class="search-icon">
