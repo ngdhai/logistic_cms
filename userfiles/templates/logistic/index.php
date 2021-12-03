@@ -24,9 +24,9 @@
 <!-- Google Map -->
 <div class="mapouter">
   <div class="gmap_canvas">
-    <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br />
+    <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Anh%20Tuan%20Logistics,%20Đường%20Nguyễn%20Văn%20Cừ,%20Gia%20Thụy,%20Long%20Biên,%20Hà%20Nội,%20Việt%20Nam&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br />
     <style>
-      .mapouter {
+      .mapouter {                                                                             
         position: relative;
         text-align: right;
         height: 500px;

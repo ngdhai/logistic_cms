@@ -8,10 +8,8 @@
              <module type="logo" template="default" id="logo" rel="global" field="logo" />
            </div>
            <p>
-             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Voluptatum voluptas eligendi nemo quasi natus possimus soluta
-             voluptatibus cum voluptatem officia. Nesciunt, aliquam est
-             mollitia temporibus cupiditate asperiores quidem? Autem, quidem?
+             Anh Tuấn Logistics <br>
+             Dịch vụ chuyển phát nhanh
            </p>
          </div>
          <div class="offset-xl-1 col-md-4 col-xl-2 col-lg-2">
@@ -25,17 +23,17 @@
            </ul>
          </div>
          <div class="col-md-4 col-xl-3 col-lg-4">
-           <h4>Contact Us</h4>
+           <h4>Liên hệ</h4>
            <div class="footer-contact">
              <div class="contact-info">
                <div class="icon-wrapper">
                  <i class="flaticon-placeholder"></i>
                </div>
-               <p>123 Gia Thuy</p>
+               <p>Số 44 ngõ 548, 53 Đ. Nguyễn Văn Cừ, Gia Thụy, Long Biên, Hà Nội, Việt Nam</p>
              </div>
              <div class="contact-info">
                <div class="icon-wrapper"><i class="flaticon-call"></i></div>
-               <p>+00 12 123 4567</p>
+               <p>+094 319 6162</p>
              </div>
              <div class="contact-info">
                <div class="icon-wrapper"><i class="flaticon-email"></i></div>
@@ -87,7 +85,7 @@
        autoplay: true,
        singleItem: true,
        items: 1,
-       dots:false
+       dots: false
      })
    })
  </script>
