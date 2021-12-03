@@ -129,15 +129,17 @@
                 <div class="col-lg-6">
                     <div class="contact-infos">
                         <div class="email">
-                            <div class="icon-wrapper"><i class="flaticon-call"></i></div>
-                            <div>+ 00 12 123 456</div>
+                            <div class="icon-wrapper"><span class="dollar-sign"></span></div>
+                            <div>Tỷ giá: 3,830</div>
                         </div>
                         <div class="phone">
                             <div class="icon-wrapper">
-                                <span class="flaticon-email"></span>
+                                <i class="flaticon-call"></i>
                             </div>
-                            <div>Support@mail.com</div>
+                            <div>+ 094 319 6162</div>
                         </div>
+
+                        
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -216,11 +218,12 @@
             <div class="container">
                 <div class="row" style="position:absolute;top:50%;transform: translateY(-50%);">
                     <div>
-                        <div class="hero-txt" style="color: white;">
-                            <span class="wow fadeInDown">Anh Tuấn logistics</span>
-                            <h1 class="wow fadeInUp" style="line-height: 1.5;">
-                                Chuyên cung cấp dịch vụ <br>
-                                đặt hàng nội địa Trung Quốc
+                        <div class="hero-txt" style="color: white">
+                            <span class="wow fadeInDown edit" rel="header-content-text" field="header-content-text">Anh Tuấn logistics</span>
+                            <h1 class="wow fadeInUp edit" rel="header-content-text1" field="header-content-text1" style="line-height: 1.5;">
+                                Hãy làm thật tốt những gì <br>
+                                bạn làm đến mức họ muốn quay lại <br>
+                                trong tương lai cùng với bạn của họ
                             </h1>
                         </div>
                     </div>
@@ -233,11 +236,11 @@
             <div class="container">
                 <div class="row" style="position:absolute;top:50%;transform: translateY(-50%);">
                     <div>
-                        <div class="hero-txt" style="color: white;">
-                            <span class="wow fadeInDown">Anh Tuấn logistics</span>
-                            <h1 class="wow fadeInUp" style="line-height: 1.5;">
+                        <div class="hero-txt " style="color: white;">
+                            <span class="wow fadeInDown edit" rel="header-content2" field="header-content2">Anh Tuấn logistics</span>
+                            <h1 class="wow fadeInUp edit" rel="header-content21" field="header-content21" style="line-height: 1.5;">
                                 Chuyên cung cấp dịch vụ <br>
-                                đặt hàng nội địa Trung Quốc
+                                vận chuyển Trung-Việt
                             </h1>
                         </div>
                     </div>

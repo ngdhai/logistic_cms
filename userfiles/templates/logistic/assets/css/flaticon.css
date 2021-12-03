@@ -3,6 +3,11 @@
 	content: '\f2a0';
 	font-weight: 900
 }
+.dollar-sign:before {
+	font-family: "Font Awesome 5 Free";
+	content: '\f155';
+	font-weight: 900
+}
 
 .flaticon-email:before {
 	font-family: "Font Awesome 5 Free";
