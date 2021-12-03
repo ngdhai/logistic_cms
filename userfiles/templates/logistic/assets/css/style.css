@@ -5897,7 +5897,7 @@ span {
 }
 
 .counter-area {
-  background-color: #34ccff;
+  background-color: #f7f7f7;
   padding-top: 40px;
   padding-bottom: 14px;
 }
@@ -6033,4 +6033,24 @@ span.title::after {
   margin-top: 5%;
   margin-bottom: 5%;
   border: 1px solid #58bed3;
+}
+
+.home-slide .slide-bg, .home-slider {
+  
+}
+.home-slide {
+  width: 100%;
+}
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(15, 14, 14);
+  opacity: 0.5;
 }

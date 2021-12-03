@@ -432,7 +432,12 @@ $user = get_user_by_id($user_id);
                     </li>
                 <?php endif; ?>
 
-                <?php if ($shop_disabled == false AND mw()->module_manager->is_installed('shop') == true): ?>
+                <li <?php print 'class="nav-item dropdown ' . ($load_module == 'bill_code' ? 'active' : '') . '"'; ?>>
+                    <a class="nav-link <?php print ($load_module == 'bill_code' OR $view == 'roles') ? 'active' : ''; ?>" href="<?php print admin_url('view:modules/load_module:bill_code'); ?>">
+                        <i class="mdi mdi-shopping"></i> <?php _e("Mã vận đơn"); ?>
+                    </a>
+                </li>
+                <!-- <?php if ($shop_disabled == false AND mw()->module_manager->is_installed('shop') == true): ?>
                     <li class="nav-item dropdown-no-js <?php echo $shop_class; ?>">
                         <a href="<?php print admin_url(); ?>view:shop" class="nav-link dropdown-toggle <?php echo $shop_class; ?>">
                             <i class="mdi mdi-shopping"></i>
@@ -482,7 +487,7 @@ $user = get_user_by_id($user_id);
                             </a>
                         </div>
                     </li>
-                <?php endif; ?>
+                <?php endif; ?> -->
 
                 <?php if (user_can_access('module.modules.index')): ?>
                     <li class="nav-item">

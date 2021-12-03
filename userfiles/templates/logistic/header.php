@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anh Tuan Logistic</title>
+    <title>B2B SHOP</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="<?php print template_url(); ?>assets/img/favicon.png" type="image/x-icon" />
     <!-- bootstrap css -->
@@ -167,7 +167,7 @@
                 <div class="col-lg-3 col-6">
                     <div class="logo-wrapper">
                         <div class="logo-wrapper-inner">
-                            <module type="logo" template="default" />
+                            <module type="logo" id="logo" rel="global" field="logo" template="default" />
                             <!-- <a href="index.html"><img src="<?php print template_url(); ?>assets/img/logo-3.png" alt=""></a> -->
                         </div>
                     </div>
@@ -208,27 +208,56 @@
 </div>
 <!--   search bar popup end   -->
 <!--  hero area start  -->
-<div class="hero-area hero-bg-3 home-3">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-6 col-lg-8">
-                <div class="hero-txt">
-                    <span class="wow fadeInDown" data-wow-duration="1.5s" style="
-                  visibility: visible;
-                  animation-duration: 1.5s;
-                  animation-name: fadeInDown;
-                ">We are transpix</span>
-                    <h1 class="wow fadeInUp" data-wow-duration="1.5s" style="
-                  visibility: visible;
-                  animation-duration: 1.5s;
-                  animation-name: fadeInUp;
-                ">
-                        No# 1 solution for transport
-                    </h1>
+<div>
+    <div class="home-slider owl-carousel owl-theme image-header">
+        <div class="item" style="position: relative;">
+            <img class="slide-bg" src="<?php print template_url(); ?>assets/img/hero_bg.jpg" style="background-color: #bfcec9;" alt="home banner">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row" style="position:absolute;top:50%;transform: translateY(-50%);">
+                    <div>
+                        <div class="hero-txt" style="color: white;">
+                            <span class="wow fadeInDown">Anh Tuấn logistics</span>
+                            <h1 class="wow fadeInUp" style="line-height: 1.5;">
+                                Chuyên cung cấp dịch vụ <br>
+                                đặt hàng nội địa Trung Quốc
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item" style="position: relative;">
+            <img class="slide-bg" src="<?php print template_url(); ?>assets/img/blog-detail-img.jpg" style="background-color: #bfcec9;" alt="home banner">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row" style="position:absolute;top:50%;transform: translateY(-50%);">
+                    <div>
+                        <div class="hero-txt" style="color: white;">
+                            <span class="wow fadeInDown">Anh Tuấn logistics</span>
+                            <h1 class="wow fadeInUp" style="line-height: 1.5;">
+                                Chuyên cung cấp dịch vụ <br>
+                                đặt hàng nội địa Trung Quốc
+                            </h1>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="hero-overlay"></div>
+
 </div>
+<div class="container" style="padding-top: 40px;">
+    <div class="blog-sidebar-widgets">
+        <div class="searchbar-form-section">
+            <form action="blogs.html">
+                <div class="searchbar">
+                    <input name="term" type="text" placeholder="TRA CỨU MÃ VẬN ĐƠN">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 <!--  hero area end  -->
