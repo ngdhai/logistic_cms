@@ -6095,12 +6095,14 @@ h1.title, h1.title-page {
   clear: both;
 }
 
-table.price_one_order{
+table.price_one_order {
   border-color: #f5f5f5
 }
-table.price_one_order tr:nth-child(even) td{
+
+table.price_one_order tr:nth-child(even) td {
   background-color: #f5f5f5;
 }
+
 .price_one_order thead th {
   background: #007399 !important;
   color: #fff !important;
@@ -6111,6 +6113,16 @@ table.price_one_order tr:nth-child(even) td{
   padding: 2px 2px;
 }
 
+.priceVN th {
+  background: #007399 !important;
+  color: #fff !important;
+  font-family: arial;
+  text-align: center;
+  border: 1px solid #235c99;
+  font-size: 13px;
+  padding: 4px 4px;
+}
+
 .price_one_order tbody tr td {
   padding: 10px;
   font-size: 15px;
@@ -6119,11 +6131,12 @@ table.price_one_order tr:nth-child(even) td{
 
 .note-danger {
   background-color: #fff1f0;
-  color:#d85030;
+  color: #d85030;
   padding: 5px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
 html {
   scroll-behavior: smooth;
 }
