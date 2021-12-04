@@ -6033,16 +6033,17 @@ span.title::after {
   border: 1px solid #58bed3;
 }
 
-.home-slide .slide-bg, .home-slider {
-  
-}
+.home-slide .slide-bg, .home-slider {}
+
 .home-slide {
   width: 100%;
 }
+
 .owl-carousel .owl-item img {
   display: block;
   width: 100%;
 }
+
 .overlay {
   position: absolute;
   top: 0px;
@@ -6054,8 +6055,9 @@ span.title::after {
 }
 
 .breadcrumb-item.active {
-  color: #6c757d; 
+  color: #6c757d;
 }
+
 .breadcrumb-item+.breadcrumb-item::before {
   color: #6c757d;
   font-family: "Font Awesome 5 Free";
@@ -6067,4 +6069,61 @@ span.title::after {
 .breadcrumb a, .breadcrumb li {
   font-size: 18px;
   color: #6c757d;
+}
+
+/* Price page css */
+
+h1.title, h1.title-page {
+  font-weight: normal;
+  font-size: 20px;
+  border-bottom: 1px solid #ddd;
+  background: #007399;
+  padding: 10px;
+  color: white;
+  box-sizing: border-box;
+  margin-top: 5px;
+  line-height: 32px;
+  text-transform: uppercase;
+
+}
+
+.item-table-price h2 {
+  color: #007399;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 30px;
+  clear: both;
+}
+
+table.price_one_order{
+  border-color: #f5f5f5
+}
+table.price_one_order tr:nth-child(even) td{
+  background-color: #f5f5f5;
+}
+.price_one_order thead th {
+  background: #007399 !important;
+  color: #fff !important;
+  font-family: arial;
+  text-align: center;
+  border: 1px solid #235c99;
+  font-size: 13px;
+  padding: 2px 2px;
+}
+
+.price_one_order tbody tr td {
+  padding: 10px;
+  font-size: 15px;
+  border-right: 1px dotted gainsboro;
+}
+
+.note-danger {
+  background-color: #fff1f0;
+  color:#d85030;
+  padding: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+html {
+  scroll-behavior: smooth;
 }

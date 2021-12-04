@@ -38,7 +38,7 @@ description: Giới thiệu
             </div>
             <div class="col-xl-9 col-lg-9 edit" rel="about-page" field="about-page">
                 <div class="blog-details">
-                    <img class="blog-details-img-1" src="<?php print template_url(); ?>assets/img/logo-4.jpg" alt="">
+                    <img class="blog-details-img-1" src="<?php print template_url(); ?>assets/img/logo-3.png" alt="">
 
                     <h2 class="blog-details-title">Giới thiệu</h2>
                     <div class="blog-details-body">
