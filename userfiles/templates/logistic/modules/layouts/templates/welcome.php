@@ -22,14 +22,17 @@ description: Welcome
                             <span class="title">CHÀO MỪNG CÁC BẠN ĐÃ ĐẾN VỚI</span>
                             <h2 class="subtitle">ANH TUẤN LOGISTIC</h2>
                             <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Rem corporis quibusdam labore, neque repellendus qui eum non
-                                nesciunt at saepe. Voluptate quasi temporibus, et cupiditate
-                                voluptas expedita libero ex rem?
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Rem corporis quibusdam labore, neque repellendus qui eum non
-                                nesciunt at saepe. Voluptate quasi temporibus, et cupiditate
-                                voluptas expedita libero ex rem?
+                                &nbsp;&nbsp;&nbsp;&nbsp;Với sứ mệnh xoá bỏ khoảng cách địa lý giúp cho các khách hàng, doanh nghiệp Việt Nam tiếp cận
+                                tốt hơn với nguồn hàng, xưởng sản xuất quy mô lớn của Trung Quốc, AnhTuanLogistics đã và đang không
+                                ngừng nỗ lực để giúp việc giao thương nhanh hơn với chi phí thấp hơn, chất lượng hơn.
+                                &nbsp;&nbsp;&nbsp;&nbsp;AnhTuanLogistics sử dụng hệ thống website thông minh giúp khách hàng có thể đặt hàng chính xác,
+                                nhanh chóng và theo dõi đơn hàng một cách dễ dàng.
+                                Cùng với đội ngũ nhân viên order chuyên nghiệp, năng động, trẻ trung, thông thạo dịch bằng Hoa ngữ, giàu kinh nghiệm đóng
+                                hàng đảm bảo cho quý khách hàng.
+                                &nbsp;&nbsp;&nbsp;&nbsp;AnhTuanLogistics định hướng trở thành công ty vận chuyển order uy tín hàng đầu Việt Nam. Với nhiều năm 
+                                kinh nghiệm cung cấp dịch vụ vận chuyển hàng hoá, đặt hàng, order hàng từ Trung Quốc, chúng tôi có thể đáp ứng mọi yêu cầu của 
+                                Quý khách!
+
                             </p>
                         </div>
                     </div>

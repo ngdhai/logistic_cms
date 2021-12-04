@@ -12,7 +12,7 @@ description: About
 
 ?>
 <!--  about section start  -->
-<div class="about-section home-3" >
+<div class="about-section home-3">
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
@@ -22,11 +22,10 @@ description: About
                             <span class="title">VỀ CHÚNG TÔI</span>
                             <h2 class="subtitle">ANH TUAN LOGISTIC</h2>
                             <p>
-                                Chuyên cung cấp dịch vụ đặt hàng nội địa Trung Quốc với giá
-                                rẻ nhất thị trường
+                                Hãy làm thật tốt những gì bạn làm đến mức họ muốn quay lại trong tương lai cùng với bạn của họ
                             </p>
                             <img src="" alt="" />
-                            <h5>TUẤN CÒ</h5>
+                            <h5>Lê Anh Tuấn</h5>
                             <span>Founder &amp; CEO</span>
                         </div>
                     </div>
@@ -41,10 +40,8 @@ description: About
                         <div class="point-txt edit safe-mode" rel="about_content_right1" field="about_content_right1">
                             <h4>HỖ TRỢ 24/7</h4>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Minima amet quae rerum et quidem suscipit vitae ea at
-                                debitis exercitationem dolor quos eligendi minus pariatur
-                                cumque, illum autem illo earum.
+                                Với đội ngũ nhân viên trẻ trung và nhiệt tình, AnhTuanLogistics tự tin mang đến cho khách hàng
+                                những trải nghiệm thoải mái và dễ hiểu nhất về dịch vụ vận chuyển quốc tế Trung-Việt.
                             </p>
                         </div>
                     </div>
@@ -53,12 +50,13 @@ description: About
                             <span class="flaticon-send"></span>
                         </div>
                         <div class="point-txt edit safe-mode" rel="about_content_right2" field="about_content_right2">
-                            <h4>Giao hàng nhanh</h4>
+                            <h4>CHÍNH SÁCH ĐẢM BẢO HÀNG HOÁ RÕ RÀNG</h4>
                             <p>
-                                We offers a host of logistic management services and supply
-                                chain solutions. Sed ut perspiciatis unde omnis iste natus
-                                error sitvol uptatem accusantium doloremque laudantium
-                                accusantium
+                               Mọi vấn đề phát sinh với hàng hoá vận chuyển thông qua
+                                AnhTuanLogistics sẽ được giải quyết thẳng thắn và trách nghiệm nhất.
+                                Khách hàng sẽ không còn cảm giác chạy đôn chạy đáo đi hỏi xem ai sẽ giải quyết
+                                mọi vấn đề cho mình, vì AnhTuanLogistics luôn luôn ở đây và sẵn sàng giải quyết theo đúng
+                                những gì cam kết với khách hàng.
                             </p>
                         </div>
                     </div>
