@@ -138,8 +138,6 @@
                             </div>
                             <div>+ 094 319 6162</div>
                         </div>
-
-                        
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -170,7 +168,6 @@
                     <div class="logo-wrapper">
                         <div class="logo-wrapper-inner">
                             <module type="logo" id="logo" rel="global" field="logo" template="default" />
-                            <!-- <a href="index.html"><img src="<?php print template_url(); ?>assets/img/logo-3.png" alt=""></a> -->
                         </div>
                     </div>
                 </div>
