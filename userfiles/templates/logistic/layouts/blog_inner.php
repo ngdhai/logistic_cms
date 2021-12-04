@@ -11,40 +11,26 @@ if (!$picture) {
 $itemData = content_data($post['id']);
 
 ?>
-
-<div class="service-details-section">
+<div class="container" style="padding-top:20px;padding-bottom:20px">
+    <module type="breadcrumb" />
+</div>
+<div>
     <div class="container">
         <div class="row">
-            
+
             <!--  sidebar section start  -->
             <div class="col-xl-3 col-lg-3 ">
                 <div class="sidebar">
                     <div class="category-sidebar">
                         <ul>
-                            <li><a href="services.html">Air Freight</a></li>
-                            <li><a href="services.html">Road Freight</a></li>
-                            <li><a href="services.html">Ocean Freight</a></li>
-                            <li><a href="services.html">Warehousing</a></li>
-                            <li><a href="services.html">Storage</a></li>
+                            <li><a href="">Tin tức</a></li>
+                            <li><a href="">Dịch vụ</a></li>
+                            <li><a href="">Giá cước</a></li>
+                            <li><a href="">Hướng dẫn</a></li>
+                            <li><a href="">Tuyển dụng</a></li>
                         </ul>
                     </div>
-                    <div class="quote-sidebar">
-                        <h3>REQUEST A QUOTE</h3>
-                        <form action="#" class="quote-form">
-                            <div class="form-element">
-                                <input type="text" name="name" placeholder="Your name" />
-                            </div>
-                            <div class="form-element">
-                                <input name="email" type="text" placeholder="Email" />
-                            </div>
-                            <div class="form-element">
-                                <input name="phone" type="text" placeholder="Phone" />
-                            </div>
-                            <div class="form-element">
-                                <button type="submit"><span>Submit</span></button>
-                            </div>
-                        </form>
-                    </div>
+
                 </div>
             </div>
             <div class="col-xl-9 col-lg-9 edit" rel="blog_inner" field="blog_inner-<?php print CONTENT_ID; ?>">

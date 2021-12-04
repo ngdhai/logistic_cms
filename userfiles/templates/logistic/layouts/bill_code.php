@@ -37,6 +37,7 @@ if (!empty($data)) {
 ?>
 
 <?php include template_dir() . "header.php"; ?>
+<module type="layouts" template="search"/>
 <div style="padding-bottom: 20px;">
     <div class="container">
         <div class="row">

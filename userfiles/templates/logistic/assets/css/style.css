@@ -3492,7 +3492,7 @@ ul.overview-points li::before {
 }
 
 .blog-sidebar-widgets {
-  background-color: #f7f7f7;
+  background-color: #007399;
   padding: 40px 40px;
   margin-bottom: 40px;
 }
@@ -6051,4 +6051,20 @@ span.title::after {
   width: 100%;
   background-color: rgb(15, 14, 14);
   opacity: 0.5;
+}
+
+.breadcrumb-item.active {
+  color: #6c757d; 
+}
+.breadcrumb-item+.breadcrumb-item::before {
+  color: #6c757d;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "\f054";
+  font-size: 12px;
+}
+
+.breadcrumb a, .breadcrumb li {
+  font-size: 18px;
+  color: #6c757d;
 }

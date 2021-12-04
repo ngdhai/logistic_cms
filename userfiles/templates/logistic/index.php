@@ -12,6 +12,7 @@
 ?>
 
 <?php include template_dir() . "header.php"; ?>
+<module type="layouts" template="search"/>
 <module type="layouts" template="welcome"/>
 <module type="layouts" template="countUp"/>
 <module type="layouts" template="about"/>

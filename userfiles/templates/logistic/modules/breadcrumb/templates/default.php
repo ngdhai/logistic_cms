@@ -14,7 +14,7 @@ description: Default
 ?>
 
 <?php if (isset($data) and is_array($data)) : ?>
-    <nav aria-label="breadcrumb" class="breadcrumb-nav">
+    <nav aria-label="breadcrumb" class="breadcrumb-nav" style="color: black;">
         <div class="container">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="<?php print  $homepage['url']; ?>"><?php print $homepage['title']; ?></a></li>
