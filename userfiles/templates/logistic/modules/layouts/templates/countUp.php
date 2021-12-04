@@ -20,7 +20,7 @@ description: Count up
         });
     });
 </script>
-<div class="counter-area p-relative pb-90 edit safe-mode nodrop" style="background-image: url(<?php print template_url(); ?>assets/img/bg/counter-bg.png)">
+<div class="counter-area p-relative pb-90 edit safe-mode nodrop" >
     <div class="container">
         <div class="row p-relative">
             <div class="col-lg-3 col-md-6 col-sm-12 padding-couter">

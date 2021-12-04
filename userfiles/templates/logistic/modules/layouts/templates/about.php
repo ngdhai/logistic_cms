@@ -25,7 +25,7 @@ description: About
                                 Chuyên cung cấp dịch vụ đặt hàng nội địa Trung Quốc với giá
                                 rẻ nhất thị trường
                             </p>
-                            <img src="assets/img/signature.png" alt="" />
+                            <img src="" alt="" />
                             <h5>TUẤN CÒ</h5>
                             <span>Founder &amp; CEO</span>
                         </div>

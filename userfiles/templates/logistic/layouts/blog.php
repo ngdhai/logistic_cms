@@ -14,7 +14,7 @@ description: Tin tức
 ?>
 <?php include template_dir() . "header.php"; ?>
 
-<div class="edit" rel="content" field="lino3_blog">
+<div class="edit" rel="content" field="logistic_blog">
     <div class="container" id="blog-container">
         <div class="row">
             <section class="right-content col-lg-9 col-lg-push-3 collection">
