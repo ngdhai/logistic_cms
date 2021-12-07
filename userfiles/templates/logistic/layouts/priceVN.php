@@ -65,7 +65,7 @@ description: Bảng giá cước vận chuyển nội địa VN
                             </tr>
                             <tr>
                                 <td>Cân tiếp theo</td>
-                                <td colspan="2">3.500đ</td>
+                                <td colspan="2">6.000đ</td>
                             </tr>
 
                             <tr>

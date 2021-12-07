@@ -437,6 +437,11 @@ $user = get_user_by_id($user_id);
                         <i class="mdi mdi-shopping"></i> <?php _e("Mã vận đơn"); ?>
                     </a>
                 </li>
+                <li <?php print 'class="nav-item dropdown ' . ($load_module == 'customer' ? 'active' : '') . '"'; ?>>
+                    <a class="nav-link <?php print ($load_module == 'customer' OR $view == 'roles') ? 'active' : ''; ?>" href="<?php print admin_url('view:modules/load_module:customer'); ?>">
+                        <i class="mdi mdi-account"></i> <?php _e("Khách hàng"); ?>
+                    </a>
+                </li>
                 <!-- <?php if ($shop_disabled == false AND mw()->module_manager->is_installed('shop') == true): ?>
                     <li class="nav-item dropdown-no-js <?php echo $shop_class; ?>">
                         <a href="<?php print admin_url(); ?>view:shop" class="nav-link dropdown-toggle <?php echo $shop_class; ?>">

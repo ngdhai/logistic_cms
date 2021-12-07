@@ -4,31 +4,31 @@ use Illuminate\Support\Facades\DB;
 
 only_admin_access(); ?>
 <script>
-    function delete_bill_code(id) {
+    function delete_bag(id) {
         var are_you_sure = confirm("Bạn đã chắc chắn?");
         if (are_you_sure == true) {
             var data = {}
             data.id = id;
-            var url = "<?php print api_url('delete_bill_code'); ?>";
+            var url = "<?php print api_url('delete_bag'); ?>";
             var post = $.post(url, data);
             post.done(function(data) {
-                mw.reload_module("bill_code");
-                mw.reload_module("bill_code/list");
+                mw.reload_module("bag");
+                mw.reload_module("bag/list");
             });
         }
     }
 </script>
 <script>
     $(document).ready(function() {
-        $("#add-bill_code-form").submit(function(event) {
+        $("#add-bag-form").submit(function(event) {
             event.preventDefault();
             var data = $(this).serialize();
-            var url = "<?php print api_url('save_bill_code'); ?>";
+            var url = "<?php print api_url('save_bag'); ?>";
             var post = $.post(url, data);
             post.done(function(data) {
                 $('#myModal').modal('hide');
-                mw.reload_module("bill_code");
-                mw.reload_module("bill_code/list");
+                mw.reload_module("bag");
+                mw.reload_module("bag/list");
             });
         });
 
@@ -43,8 +43,8 @@ only_admin_access(); ?>
             var url = "<?php print api_url('search'); ?>";
             var post = $.post(url, data);
             post.done(function(data) {
-                mw.reload_module("bill_code");
-                mw.reload_module("bill_code/list");
+                mw.reload_module("bag");
+                mw.reload_module("bag/list");
             });
         });
 
@@ -53,16 +53,16 @@ only_admin_access(); ?>
 </script>
 <script>
     $(document).ready(function() {
-        $("#edit-bill_code-form").submit(function(event) {
+        $("#edit-bag-form").submit(function(event) {
             event.preventDefault();
             var data = $(this).serialize();
-            var url = "<?php print api_url('edit_bill_code'); ?>";
+            var url = "<?php print api_url('edit_bag'); ?>";
             var post = $.post(url, data);
             post.done(function(data) {
                 $('#editModal').modal('hide');
                 $('.modal-backdrop').hide()
-                mw.reload_module("bill_code");
-                mw.reload_module("bill_code/list");
+                mw.reload_module("bag");
+                mw.reload_module("bag/list");
             });
         });
 
@@ -78,20 +78,19 @@ only_admin_access(); ?>
             var url = "<?php print api_url('update_status'); ?>";
             var post = $.post(url, "id=" + data);
             post.done(function(data) {
-                mw.reload_module("bill_code");
-                mw.reload_module("bill_code/list");
+                mw.reload_module("scan_code");
+                mw.reload_module("scan_code/list");
             });
         });
-
     });
 </script>
-<?php 
-    if(!empty($_GET['search'])){
-        $data = DB::table('bill_code')->where('code',"LIKE",'%'.$_GET['search'].'%')->get(); 
-        $search = $_GET['search'];
-    }else{
-        $data = DB::table('bill_code')->get(); 
-    }
+<?php
+if (!empty($_GET['search'])) {
+    $data = DB::table('bags')->get();
+    $search = $_GET['search'];
+} else {
+    $data = DB::table('bags')->get();
+}
 
 ?>
 
@@ -106,14 +105,14 @@ only_admin_access(); ?>
                     <span class="input-group-text px-1"><i class="mdi mdi-magnify"></i></span>
                 </div>
                 <form>
-                    <input type="text" name="search" class="js-search-by-keywords-input   form-control form-control-sm" style="border-radius: 0;" value="<?php print (!empty($search)?$search:"")?>" placeholder="Tìm mã">
+                    <input type="text" name="search" class="js-search-by-keywords-input   form-control form-control-sm" style="border-radius: 0;" value="<?php print(!empty($search) ? $search : "") ?>" placeholder="Tìm mã">
                 </form>
             </div>
         </div>
         <div style="width: 60%;">
         </div>
         <div style="width: 20%;">
-            <button data-toggle="modal" data-target="#myModal" class="btn btn-outline-warning btn-sm ml-md-2 ml-1 "><?php _e('Thêm mã vận đơn'); ?></button>
+            <a href="<?php print admin_url('view:modules/load_module:scan_code/edit'); ?>" class="btn btn-outline-warning btn-sm ml-md-2 ml-1 "><?php _e('Quét mã'); ?></a>
         </div>
     </div>
 </div>
@@ -121,15 +120,19 @@ only_admin_access(); ?>
     <table width="100%" class="mw-ui-table">
         <thead>
             <tr style="text-align: center;">
-                <th>id</th>
-                <th>Code</th>
-                <th>Nhận hàng TQ</th>
-                <th>Đóng bao</th>
-                <th>Xuất kho</th>
-                <th>Thông quan</th>
-                <th>Nhận hàng VN</th>
-                <th>Trạng thái</th>
-                <th>Hành động</th>
+                <th>Id</th>
+                <th>Mã khách hàng</th>
+                <th>Tên khách hàng</th>
+                <th>Mã bao</th>
+                <th>Số cân</th>
+                <th>Số kiện</th>
+                <th>Số bao</th>
+                <th>Số m3</th>
+                <th>Điểm đến</th>
+                <th>Ngày tạo</th>
+                <th>Ngày nhận</th>
+                <th>Người tạo</th>
+                <th>Cập nhật</th>
             </tr>
         </thead>
         <?php if ($data) : ?>
@@ -162,7 +165,7 @@ only_admin_access(); ?>
                                     <button onclick='showModalEdit(<?php print json_encode($item); ?>)' class="btn btn-success btn-sm"><?php _e('Sửa'); ?></button>
                                 </div>
                                 <div>
-                                    <a class="btn btn-danger btn-sm" href="javascript:delete_bill_code('<?php print $item->id ?>');">Xoá</a>
+                                    <a class="btn btn-danger btn-sm" href="javascript:delete_bag('<?php print $item->id ?>');">Xoá</a>
                                 </div>
                             </div>
                         </td>
@@ -182,7 +185,7 @@ only_admin_access(); ?>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
-                <form id="add-bill_code-form">
+                <form id="add-bag-form">
                     <label class="mw-ui-label">Mã vận đơn</label>
                     <input type="text" name="code" required class="mw-ui-field" autocomplete="off">
                     <div style="padding-top: 20px;padding-bottom: 20px;">
@@ -215,7 +218,7 @@ only_admin_access(); ?>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
-                <form id="edit-bill_code-form">
+                <form id="edit-bag-form">
                     <input type="hidden" id="edit_id" name="edit_id">
                     <label class="mw-ui-label">Mã vận đơn</label>
                     <input type="text" name="code_edit" id="code_edit" required class="mw-ui-field" autocomplete="off">
