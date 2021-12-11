@@ -13,8 +13,8 @@ description: Home blog
 <!--   news section start    -->
 <div class="news-section">
     <div class="container">
-        <span class="title">Latest blog</span>
-        <h2 class="subtitle">Inside The News</h2>
+        <span class="title">Tin tức</span>
+        <h2 class="subtitle">Bài viết mới nhất</h2>
         <div class="row">
             <?php if (!empty($data)) : ?>
                 <?php foreach ($data as $item) : ?>

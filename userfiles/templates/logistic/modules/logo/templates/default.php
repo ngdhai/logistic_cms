@@ -17,7 +17,7 @@ $size = $size . 'px';
     <?php else: ?>
         <?php if ($logotype == 'image' or $logotype == false): ?>
             <?php if ($logoimage != '' and $logoimage != false): ?>
-                <a href="demo3.html" class="logo">
+                <a href="#" class="logo">
                     <?php if ($logoimage_inverse != '' and $logoimage_inverse != false): ?>
                         <img src="<?php print $logoimage_inverse; ?>" alt="" <?php if (in_live_edit()) {
                             print 'onclick="javascript:mw.drag.module_settings();void(0);"';

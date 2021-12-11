@@ -184,7 +184,7 @@ only_admin_access(); ?>
             <div class="modal-body">
                 <form id="add-bill_code-form">
                     <label class="mw-ui-label">Mã vận đơn</label>
-                    <input type="text" name="code" required class="mw-ui-field" autocomplete="off">
+                    <textarea id="scan" name="code" cols="30" rows="10"></textarea>
                     <div style="padding-top: 20px;padding-bottom: 20px;">
                         <label class="mw-ui-label">Thời gian thiết lập</label>
                         <div style="display: inline-flex">

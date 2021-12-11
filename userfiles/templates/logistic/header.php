@@ -123,11 +123,16 @@
 </head>
 <!--   header area start   -->
 <div class="header-area home-3">
+    <?php if (is_live_edit()) : ?>
+        <div style="padding: 20px;">
+
+        </div>
+    <?php endif ?>
     <div class="info-bar">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="contact-infos">
+                    <div class="contact-infos edit" rel="infor" field="infor">
                         <div class="email">
                             <div class="icon-wrapper"><span class="dollar-sign"></span></div>
                             <div>Tỷ giá: 3,830</div>

@@ -8,6 +8,7 @@ function save_bill_code($data)
     if (!is_admin()) {
         return;
     }
+    $data = array_unique(preg_split('/\r\n|[\r\n]/', $data['code']));
     date_default_timezone_set('Asia/Ho_Chi_Minh');
     $date = date('Y-m-d H:i:s');
     $time2 = strtotime('+4 hour', strtotime($date));
@@ -16,13 +17,18 @@ function save_bill_code($data)
     $time3 = date('Y-m-d H:i:s', $time3);
     $time4 = strtotime('+15 hour', strtotime($date));
     $time4 = date('Y-m-d H:i:s', $time4);
-    return DB::table('bill_code')->insert([
-        'code' => $data['code'],
-        'created_at' => $date,
-        'time2' => $time2,
-        'time3' => $time3,
-        'time4' => $time4,
-    ]);
+    if(!empty($data)){
+        foreach ($data as $code) {
+            DB::table('bill_code')->insert([
+                'code' => $code,
+                'created_at' => $date,
+                'time2' => $time2,
+                'time3' => $time3,
+                'time4' => $time4,
+            ]);
+        }
+    }
+    return true;
 }
 api_expose('edit_bill_code');
 function edit_bill_code($data)

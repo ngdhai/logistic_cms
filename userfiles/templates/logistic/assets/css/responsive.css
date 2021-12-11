@@ -82,6 +82,9 @@
   .header-area span.working-time {
     display: none;
   }
+  .hero-txt{
+    display: none;
+  }
   .image-welcome {
     display: none;
   }
