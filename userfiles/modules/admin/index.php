@@ -14,7 +14,7 @@
         $holder_cls = false;
     }
     ?>
-
+ <?php if($user_id == 1): ?>
     <main class="module-<?php print  $holder_cls ?>">
 
         <?php if (isset($render_content) != false and $render_content): ?>
@@ -89,7 +89,7 @@
 
         <?php include(__DIR__ . DS . 'copyright.php'); ?>
     </main>
-
+<?php endif ?>
 <?php endif; ?>
 
 <?php include(__DIR__ . DS . 'footer.php'); ?>

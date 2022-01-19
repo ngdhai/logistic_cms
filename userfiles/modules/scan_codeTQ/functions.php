@@ -20,7 +20,7 @@ function save_bag($data)
     $kg = $data['kg'];
     $m3 = $data['m3'];
     $number_of_bag = $data['bag'];
-    $scan_code_array = array_unique(preg_split('/\r\n|[\r\n]/', $data['scan']));
+    $scan_code_array = array_filter(array_unique(preg_split('/\r\n|[\r\n]/', $data['scan'])));
     $id = DB::table('bags')->insertGetId([
         'customer_id' => $customer_id,
         'bag_id' =>  $bag_id,
@@ -72,7 +72,7 @@ function edit_bag($data)
     $m3 = $data['m3'];
     $number_of_bag = $data['bag'];
 
-    $scan_code_array = array_unique(preg_split('/\r\n|[\r\n]/', $data['scan']));
+    $scan_code_array = array_filter(array_unique(preg_split('/\r\n|[\r\n]/', $data['scan'])));
     $main_code = DB::table('bill_code')->where('bag_id',$data['id'])->pluck('code')->toArray();
     $item_add = array_diff($scan_code_array,$main_code);
     $item_delete = array_diff($main_code,$scan_code_array);

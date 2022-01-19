@@ -32,7 +32,7 @@ use Illuminate\Support\Facades\DB;
             var url = "<?php print api_url('edit_bag'); ?>";
             var post = $.post(url, data);
             post.done(function(data) {
-                mw.reload_module("scan_code");
+                mw.reload_module("scan_codeTQ");
                 alert("Cập nhật thành công")
             });
         });

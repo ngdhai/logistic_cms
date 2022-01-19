@@ -23,7 +23,7 @@
             var url = "<?php print api_url('save_bag'); ?>";
             var post = $.post(url, data);
             post.done(function(data) {
-                mw.reload_module("scan_code/scanTQ");
+                mw.reload_module("scan_codeTQ/scanTQ");
                 alert("Đã lưu thành công")
             });
         });

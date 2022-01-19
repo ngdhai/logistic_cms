@@ -16,14 +16,16 @@ if ($editBag !== false) {
 ?>
 <?php
 if (!empty($_GET['search'])) {
-    $bill_code = DB::table('bill_code')->where('code', "=", trim($_GET['search']))->first();
+    $bill_code = DB::table('bill_code')->where('code', "=", trim($_GET['search']))->whereNotNull('bag_id')->first();
+    
     $data = null;
     if (!empty($bill_code)) {
         $id_bag = $bill_code->bag_id;
         $data = DB::table('bags')
             ->join(DB::raw("users"), "users.id", "=", "bags.created_by")
-            ->join(DB::raw("users as us"), "us.id", "=", "bags.updated_by")
+            ->leftJoin(DB::raw("users as us"), "us.id", "=", "bags.updated_by")
             ->join(DB::raw("customer"), "customer.id", "=", "bags.customer_id")
+            ->select("customer.code", "customer.name", "bags.*", "users.username","us.username as update_by")
             ->where('bags.id', $id_bag)
             ->select("customer.code", "customer.name", "bags.*", "users.username","us.username as update_by")
             ->get();
@@ -31,13 +33,15 @@ if (!empty($_GET['search'])) {
 
     $search = $_GET['search'];
 } else {
+    
     $data = DB::table('bags')
         ->join(DB::raw("users"), "users.id", "=", "bags.created_by")
-        ->join(DB::raw("users as us"), "us.id", "=", "bags.updated_by")
+        ->leftJoin(DB::raw("users as us"), "us.id", "=", "bags.updated_by")
         ->join(DB::raw("customer"), "customer.id", "=", "bags.customer_id")
         ->select("customer.code", "customer.name", "bags.*", "users.username","us.username as update_by")
         ->get();
 }
+
 
 ?>
 
@@ -45,8 +49,8 @@ if (!empty($_GET['search'])) {
     <h2>Quản lý hàng hoá</h2>
 </div>
 <div style="padding-top: 20px;padding-bottom: 20px;">
-    <div class="container" style="display: inline-flex;">
-        <div style="width: 30%;">
+    <div style="display: inline-flex;">
+        <div>
             <div class="input-group mb-0 prepend-transparent mx-2">
                 <div class="input-group-prepend">
                     <span class="input-group-text px-1"><i class="mdi mdi-magnify"></i></span>
@@ -56,16 +60,15 @@ if (!empty($_GET['search'])) {
                 </form>
             </div>
         </div>
-        <div style="width: 70%;">
-        </div>
-        <div style="width: 10%;">
+       
+        <div>
             <a href="<?php print admin_url('view:modules/load_module:scan_codeTQ/scanTQ'); ?>" class="btn btn-primary btn-sm">
                 <?php _e("Quét mã"); ?>
             </a>
         </div>
     </div>
 </div>
-<div class="container">
+<div>
     <table width="100%" class="mw-ui-table">
         <thead>
             <tr style="text-align: center;">

@@ -101,7 +101,7 @@ if (!empty($_GET['search'])) {
 </div>
 <div style="padding-top: 20px;padding-bottom: 20px;">
     <div class="container" style="display: inline-flex;">
-        <div style="width: 30%;">
+        <div>
             <div class="input-group mb-0 prepend-transparent mx-2">
                 <div class="input-group-prepend">
                     <span class="input-group-text px-1"><i class="mdi mdi-magnify"></i></span>
@@ -111,14 +111,13 @@ if (!empty($_GET['search'])) {
                 </form>
             </div>
         </div>
-        <div style="width: 60%;">
-        </div>
-        <div style="width: 20%;">
+        
+        <div>
             <button data-toggle="modal" data-target="#myModal" class="btn btn-outline-warning btn-sm ml-md-2 ml-1 "><?php _e('Thêm khách hàng'); ?></button>
         </div>
     </div>
 </div>
-<div class="container">
+<div>
     <table width="100%" class="mw-ui-table">
         <thead>
             <tr style="text-align: center;">
